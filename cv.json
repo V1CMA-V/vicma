@@ -233,8 +233,8 @@
           "En desarrollo",
           "Responsive"
         ],
-        "url": "/Example1",
-        "github": "https://github.com/vicma/barberia1"
+        "url": "https://barberiavic.vercel.app/Example1",
+        "github": "https://github.com/vicma/g-look-barberia"
       },
       {
         "name": "Barberia 2",
@@ -246,7 +246,7 @@
           "En desarrollo",
           "Responsive"
         ],
-        "url": "/Example2",
+        "url": "https://barberiavic.vercel.app/Example2",
         "github": "https://github.com/vicma/barberia2"
       }
     ]
