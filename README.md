@@ -1,104 +1,119 @@
-
-
 <div align="center">
-<img src="logo.png" height="90px" width="auto" /> 
-<h2>
-    <em>Résumé</em> minimalista maquetado para web y pdf
-</h2>
-<p>
-Esquema del JSON de CV de <a href="https://jsonresume.org/schema/">jsonresume.org</a>
-</p>
-
-
-<p>
-Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
-
-</p>
-
+  <img src="logo.png" height="90px" width="auto" />
+  <h2>
+    <em>Portafolio de Víctor Martínez</em> – Desarrollador Web Frontend
+  </h2>
+  <p>
+    Portafolio personal y CV web utilizando Astro y TailwindCSS.
+  </p>
+  <p>
+    Optimizado para rendimiento, accesibilidad y SEO técnico.
+  </p>
 </div>
 
 <div align="center">
-    <a href="#🚀-empezar">
-        Empezar
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🧞-comandos">
-        Comandos
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🔑-licencia">
-        Licencia
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="https://midu.dev">
-        Personal
-    </a>
-   
+  <a href="#-sitio-en-vivo">
+    Sitio en Vivo
+  </a>
+  <span>&nbsp;✦&nbsp;</span>
+  <a href="#-tecnologías-y-herramientas">
+    Tecnologías
+  </a>
+  <span>&nbsp;✦&nbsp;</span>
+  <a href="#-proyectos-destacados">
+    Proyectos
+  </a>
+  <span>&nbsp;✦&nbsp;</span>
+  <a href="#-contacto">
+    Contacto
+  </a>
 </div>
 
 <p></p>
 
 <div align="center">
 
-![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)
-![GitHub stars](https://img.shields.io/github/stars/midudev/minimalist-portfolio-json)
-![GitHub issues](https://img.shields.io/github/issues/midudev/minimalist-portfolio-json)
-![GitHub forks](https://img.shields.io/github/forks/midudev/minimalist-portfolio-json)
-![GitHub PRs](https://img.shields.io/github/issues-pr/midudev/minimalist-portfolio-json)
+![Astro](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white)
+![GitHub Stars](https://img.shields.io/github/stars/V1CMA-V/vicma)
+![GitHub Forks](https://img.shields.io/github/forks/V1CMA-V/vicma)
+![GitHub Issues](https://img.shields.io/github/issues/V1CMA-V/vicma)
 
 </div>
 
-<img src="portada.png"></img>
+<img src="preview.png" alt="Vista previa del portafolio" />
 
-## 🛠️ Stack
+---
 
-- [**Astro**](https://astro.build/) - El framework web de la nueva época.
-- [**Typescript**](https://www.typescriptlang.org/) - JavaScript con sintaxis de tipado.
-- [**Ninja Keys**](https://github.com/ssleptsov/ninja-keys) - Menu desplegable con atajos de teclado hecho en puro Javascript.
+## 🌐 Sitio en Vivo
 
+🔗 [https://vicma.vercel.app](https://vicma.vercel.app)
 
-## 🚀 Empezar
+---
 
-### 1. Usa este [repo](https://github.com/midudev/minimalist-portfolio-json) como _template_ de un proyecto de Astro
+## 🚀 Tecnologías y Herramientas
 
+**Frontend:**
+- HTML5
+- CSS3
+- JavaScript
+- TypeScript
+- React
+- Astro
+- TailwindCSS
+- Next.js
 
-- Yo uso [pnpm](https://pnpm.io/installation) como gestor de dependencias y empaquetador.
+**Backend:**
+- Node.js
+- MySQL
 
-```bash
-# Activa pnpm en MacOS, WSL & Linux:
-corepack enable
-corepack prepare pnpm@latest --activate
+**Herramientas:**
+- Git & GitHub
+- Vercel
 
-# Inicializa el proyecto
-pnpm create astro@latest -- --template midudev/minimalist-portfolio-json
-```
+**Optimización:**
+- SEO técnico
+- Rendimiento web
+- Diseño responsivo
 
-### 2. Añade tu contenido:
-Edita el archivo `cv.json` para crear tu propio Portafolio/CV imprimible.
-### 3. Lanza el servidor de desarrollo:
+---
 
-```bash
-# Disfruta del resultado
-pnpm dev
-```
+## 🛠️ Proyectos Destacados
 
+### ✂️ Barbería Don Perfecto
 
-1. Abre [**http://localhost:4321**](http://localhost:4321/) en tu navegador para ver el resultado 🚀
+- **Descripción:** Desarrollo de una landing page personalizada para una barbería local, enfocada en mejorar la captación de clientes y la experiencia de usuario móvil.
+- **Características:**
+  - Integración de WhatsApp Business
+  - Sistema de descuentos dinámicos
+  - Diseño moderno adaptado a la marca
 
+### ✂️ EL Templo Barbería
 
-## 🧞 Comandos
+- **Descripción:** Creación de una landing page moderna y responsiva para una barbería en Puebla.
+- **Características:**
+  - Optimización de carga en Lighthouse
+  - Enlace directo a WhatsApp Business
+  - Integración de mapa de ubicación
 
-|     | Comando          | Acción                                        |
-| :-- | :--------------- | :-------------------------------------------- |
-| ⚙️  | `dev` o `start` | Lanza un servidor de desarrollo local en  `localhost:4321`.  |
-| ⚙️  | `build`          | Comprueba posibles errores y hace un empaquetado de producción en `./dist/`.      |
-| ⚙️  | `preview`        | Vista previa en local `localhost:4321` |
+### 🧪 Diabetes Prediction App (ML Project)
 
+- **Descripción:** Desarrollo de una aplicación en Streamlit para la predicción de diabetes basada en Machine Learning.
+- **Características:**
+  - Implementación de modelos Random Forest y XGBoost
+  - Optimización de hiperparámetros
+  - Despliegue de app funcional
 
+---
 
-## 🔑 Licencia
+## 📈 Estadísticas de GitHub
 
-[MIT](LICENSE.txt) - Creado por [**midudev**](https://midu.dev).
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=V1CMA-V&show_icons=true&theme=radical)
 
+---
 
+## 📫 Contacto
 
+- 📧 **Correo:** [vicma.dev@hotmail.com](mailto:vicma.dev@hotmail.com)
+- 💼 **LinkedIn:** [https://www.linkedin.com/in/v1cma/](https://www.linkedin.com/in/v1cma/)
+- 💻 **GitHub:** [https://github.com/V1CMA-V](https://github.com/V1CMA-V)
