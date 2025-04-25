@@ -1,15 +1,14 @@
 {
   "basics": {
     "name": "Víctor Manuel Martínez Cruz",
-    "icon": "/favicon_me.svg",
-    "label": "Full Stack Developer con 2 años de experiencia",
+    "label": "Desarrollador Web Especializado en Frontend y Optimización de Proyectos Digitales",
     "image": "/me.webp",
-    "email": "vicmarc30@gmail.com",
-    "phone": "+52 5560908911",
-    "url": "https://vicma.dev",
-    "summary": "Desarrollador Web con 1 año de experiencia creando soluciones digitales eficientes. Actualmente resido en Puebla, México, y he colaborado en diversos entornos profesionales: desde trabajar con el desarrollo tecnológico de startups, como creación de landing pages. Me especializo en construir productos escalables, mantener código limpio y fomentar la innovación constante en cada etapa del desarrollo.",
+    "email": "vicma.dev@hotmail.com",
+    "phone": "5560908911",
+    "url": "https://vicma.vercel.app",
+    "summary": "Apasionado del desarrollo web, con experiencia en creación de interfaces modernas, optimizadas y responsivas. Actualmente impulsando proyectos propios de optimización web y campañas digitales. Combino habilidades técnicas con visión estratégica para ayudar a negocios locales a crecer en línea. Enfocado en tecnologías como React, Astro, TailwindCSS y SEO técnico.",
     "location": {
-      "address": "",
+      "address": "Jose Maria Lafragua 6",
       "postalCode": "72080",
       "city": "Puebla",
       "countryCode": "MX",
@@ -18,102 +17,78 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "VICMA",
-        "url": "https://www.linkedin.com/in/v1cma"
+        "username": "v1cma",
+        "url": "https://www.linkedin.com/in/v1cma/"
       },
       {
-        "network": "X",
-        "username": "V1CMA",
-        "url": "https://x.com/V1CMA"
-      },
-      {
-          "network": "GitHub",
-          "username": "V1CMA-V",
-          "url": "https://github.com/V1CMA-V"
-        }
+        "network": "GitHub",
+        "username": "V1CMA-V",
+        "url": "https://github.com/V1CMA-V"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Freelance Web Developer",
+      "position": "Desarrollador Frontend & Consultor en Optimización Digital",
+      "url": "https://vicma.vercel.app",
+      "startDate": "2023-01-01",
+      "endDate": null,
+      "summary": "Desarrollo de sitios web personalizados para negocios locales, enfocados en velocidad, responsividad y posicionamiento SEO. Especializado en creación de landing pages optimizadas y gestión de proyectos de marketing digital.",
+      "highlights": [
+        "Optimización de tiempos de carga en proyectos en más del 40%",
+        "Desarrollo de sitios con Astro, React y TailwindCSS",
+        "Implementación de campañas de captación de clientes a través de Meta Ads"
       ]
     },
-    "work": [
-      {
-        "name": "Freelance",
-        "position": "Desarrollador Web",
-        "url": "https://vicma.dev",
-        "startDate": "2025-01-01",
-        "endDate": null,
-        "summary": "Desarrollo de plataformas web eficientes y escalables. Para el impulso para nuevos proyectos y emprendimientos digitales con la ayuda de mi experiencia y conocimientos.",
-        "highlights": [
-          "Started the company"
-        ]
-      },
-      {
-        "name": "Calidad del Aire en Puebla",
-        "position": "Desarrollador Web y Analista de datos",
-        "startDate": "2024-10-01",
-        "endDate": "2025-3-01",
-        "summary": "Desalle una aplicacion la cual va obteniendo los datos de la calidad del aire en Puebla desde la pagina de la Secretaria de Salud Publica, para analizarla y determinar la calidad del aire por zonas concurridas de Puebla. ",
-        "highlights": [
-          "Started the company"
-        ]
-      },
-      {
-        "name": "Minis-FHA",
-        "position": "Desarrollador Web",
-        "url": "https://minis-fha.vercel.app",
-        "startDate": "2024-03-01",
-        "endDate": "2024-05-01",
-        "summary": "Plataforma para aumentar los clientes de una empresa por medio de la digitalización de los servicios. Impulsando el crecimiento de la empresa con la ayuda de la tecnología.",
-        "highlights": [
-          "Started the company"
-        ]
-      }
-    ],
-    "volunteer": [{
-      "organization": "Secretaria de Salud Publica",
-      "position": "Voluntario",
-      "url": "https://organization.com/",
-      "startDate": "2024-10-01",
-      "endDate": "2025-3-01",
-      "summary": "Description…",
+    {
+      "name": "G-Look Barbería",
+      "position": "Desarrollador Web Freelance",
+      "url": "https://barberiavic.vercel.app/",
+      "startDate": "2024-03-01",
+      "endDate": "2024-04-01",
+      "summary": "Creación de sitio web para barbería local, mejorando presencia digital, accesibilidad móvil y optimización SEO para captación de clientes.",
       "highlights": [
-        "Awarded 'Volunteer of the Month'"
+        "Desarrollo responsivo",
+        "Optimización SEO local",
+        "Carga de sitio en menos de 2 segundos"
       ]
-    }],
-    "education": [{
-      "institution": "Benémerita Universidad Autónoma de Puebla",
-      "url": "https://www.buap.mx/",
-      "area": "Ingeniero en Ciencias de la Computación",
-      "studyType": "Universitario",
-      "startDate": "2019-01-01",
-      "endDate": "2024-01-01",
-      "score": "8.9",
+    },
+    {
+      "name": "Barbería Don Perfecto",
+      "position": "Desarrollador Web Freelance",
+      "startDate": "2025-04-01",
+      "endDate": null,
+      "summary": "Diseño de una nueva versión de sitio web con enfoque en experiencia de usuario, optimización para motores de búsqueda y presentación de servicios personalizados.",
+      "highlights": [
+        "Integración de WhatsApp Business",
+        "Sistema de descuentos dinámicos",
+        "Desarrollo de landing page personalizada"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Benemérita Universidad Autónoma de Puebla (BUAP)",
+      "url": "https://www.buap.mx",
+      "area": "Ingeniería en Ciencias de la Computación",
+      "studyType": "Licenciatura",
+      "startDate": "2020-08-01",
+      "endDate": "2025-06-01",
+      "score": "",
       "courses": [
-        "Bases de datos"
+        "Desarrollo de Software",
+        "Análisis de Datos",
+        "Inteligencia Artificial",
+        "Machine Learning Aplicado"
       ]
-    }],
-    "awards": [{
-      "title": "Award",
-      "date": "2025-04-15",
-      "awarder": "Company",
-      "summary": "There is no spoon."
-    }],
-    "certificates": [{
-      "name": "Certificate",
-      "date": "2025-04-15",
-      "issuer": "Company",
-      "url": "https://certificate.com"
-    }],
-    "publications": [{
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2025-04-15",
-      "url": "https://publication.com",
-      "summary": "Description…"
-    }],
-    "skills": [
-      {
-        "name": "HTML",
-        "level": "Avanzado",
-        "keywords": [
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Avanzado",
+      "keywords": [
           "Desarrollo Web", "Frontend"
         ]
       },
@@ -189,65 +164,48 @@
       }
     ],
     "languages": [
-      {
-        "language": "Spanish",
-        "fluency": "Native speaker"
-      },
-      {
-        "language": "English",
-        "fluency": "Advanced"
-      }
-    ],
-    "interests": [{
-      "name": "Ciencia",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }],
-    "references": [{
-      "name": "Víctor Manuel Martínez Cruz",
-      "reference": "Reference…"
-    }],
-    "projects": [
-      {
-        "name": "Mini FHA",
-        "isActive": true,
-        "description": "Pagiana web para la reservacion de citas y visualizacion de los servicios de un adiestrador de perros ",
-        "highlights": [
-          "Atraccion de nuevos clientes",
-          "Diseño moderno y elegante",
-          "En desarrollo",
-          "Responsive"
-        ],
-        "url": "https://minis-fha.vercel.app",
-        "github": "https://github.com/vicma/minis-fha"
-      },
-      {
-        "name": "Barberia 1",
-        "isActive": true,
-        "description": "Pagina web la captacion de clientes, visualizacion de los servicios de una barberia con tono moderno y elegante.",
-        "highlights": [
-          "Atraccion de nuevos clientes",
-          "Diseño moderno y elegante",
-          "En desarrollo",
-          "Responsive"
-        ],
-        "url": "https://barberiavic.vercel.app/Example1",
-        "github": "https://github.com/vicma/g-look-barberia"
-      },
-      {
-        "name": "Barberia 2",
-        "isActive": true,
-        "description": "Pagina web para la captacion de clientes, visualizacion de los servicios de una barberia con tono moderno y urbano. ",
-        "highlights": [
-          "Atraccion de nuevos clientes",
-          "Diseño moderno y urbano",
-          "En desarrollo",
-          "Responsive"
-        ],
-        "url": "https://barberiavic.vercel.app/Example2",
-        "github": "https://github.com/vicma/barberia2"
-      }
-    ]
-  }
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Nivel Intermedio (B1 en progreso)"
+    }
+  ],
+  "projects": [
+    {
+      "name": "EL Templo Barbería Website",
+      "isActive": true,
+      "description": "Landing page moderna y responsiva para barbería local en Puebla.",
+      "highlights": [
+        "Optimización de carga en Lighthouse",
+        "Enlace directo a WhatsApp Business",
+        "Integración de mapa de ubicación"
+      ],
+      "url": "https://barberiavic.vercel.app/Example1"
+    },
+    {
+      "name": "Barbería Don Perfecto Website",
+      "isActive": true,
+      "description": "Nueva web para barbería urbana, enfocada en mejorar captación de clientes y experiencia de usuario móvil.",
+      "highlights": [
+        "Diseño moderno adaptado a la marca",
+        "Enfoque en SEO local y marketing digital",
+        "Adaptabilidad multiplataforma"
+      ],
+      "url": "https://barberiavic.vercel.app/DonPerfecto-Barber"
+    },
+    {
+      "name": "Diabetes Prediction App (ML Project)",
+      "isActive": true,
+      "description": "Desarrollo de aplicación en Streamlit para predicción de diabetes basada en Machine Learning.",
+      "highlights": [
+        "Implementación de modelos Random Forest y XGBoost",
+        "Optimización de hiperparámetros",
+        "Despliegue de app funcional"
+      ],
+      "url": "EN PROCESO"
+    }
+  ]
+}
