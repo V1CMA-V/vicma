@@ -41,7 +41,7 @@
 
 </div>
 
-<img src="preview.png" alt="Vista previa del portafolio" />
+<img src="preview.webp" alt="Vista previa del portafolio" />
 
 ---
 
