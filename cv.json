@@ -183,7 +183,8 @@
         "Enlace directo a WhatsApp Business",
         "Integración de mapa de ubicación"
       ],
-      "url": "https://barberiavic.vercel.app/Example1"
+      "url": "https://barberiavic.vercel.app/Example1",
+      "github": "https://github.com/V1CMA-V/Barberias"
     },
     {
       "name": "Barbería Don Perfecto Website",
@@ -194,7 +195,8 @@
         "Enfoque en SEO local y marketing digital",
         "Adaptabilidad multiplataforma"
       ],
-      "url": "https://barberiavic.vercel.app/DonPerfecto-Barber"
+      "url": "https://barberiavic.vercel.app/DonPerfecto-Barber",
+      "github": "https://github.com/V1CMA-V/Barberias"
     },
     {
       "name": "Diabetes Prediction App (ML Project)",
