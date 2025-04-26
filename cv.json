@@ -42,27 +42,14 @@
       ]
     },
     {
-      "name": "G-Look Barbería",
+      "name": "Adiestramiento Canino Minis FHA",
       "position": "Desarrollador Web Freelance",
-      "url": "https://barberiavic.vercel.app/",
       "startDate": "2024-03-01",
       "endDate": "2024-04-01",
-      "summary": "Creación de sitio web para barbería local, mejorando presencia digital, accesibilidad móvil y optimización SEO para captación de clientes.",
-      "highlights": [
-        "Desarrollo responsivo",
-        "Optimización SEO local",
-        "Carga de sitio en menos de 2 segundos"
-      ]
-    },
-    {
-      "name": "Barbería Don Perfecto",
-      "position": "Desarrollador Web Freelance",
-      "startDate": "2025-04-01",
-      "endDate": null,
       "summary": "Diseño de una nueva versión de sitio web con enfoque en experiencia de usuario, optimización para motores de búsqueda y presentación de servicios personalizados.",
       "highlights": [
         "Integración de WhatsApp Business",
-        "Sistema de descuentos dinámicos",
+        "Base de datos de clientes",
         "Desarrollo de landing page personalizada"
       ]
     }
@@ -175,27 +162,27 @@
   ],
   "projects": [
     {
-      "name": "EL Templo Barbería Website",
+      "name": "Minis FHA Website",
+      "isActive": false,
+      "description": "Aplicación web para la administración de una empresa de adiestramiento canino.",
+      "highlights": [
+        "Base de datos",
+        "Integración de Stripe",
+        "Integración de inicio de sesión con Google"
+      ],
+      "url": "https://minis-fha.vercel.app",
+      "github": "https://github.com/V1CMA-V/minis-fha"
+    },
+    {
+      "name": "Barbería EL Templo Website",
       "isActive": true,
-      "description": "Landing page moderna y responsiva para barbería local en Puebla.",
+      "description": "Landing page moderna y responsiva con diferentes variantes para barberías en crecimiento.",
       "highlights": [
         "Optimización de carga en Lighthouse",
         "Enlace directo a WhatsApp Business",
         "Integración de mapa de ubicación"
       ],
-      "url": "https://barberiavic.vercel.app/Example1",
-      "github": "https://github.com/V1CMA-V/Barberias"
-    },
-    {
-      "name": "Barbería Don Perfecto Website",
-      "isActive": true,
-      "description": "Nueva web para barbería urbana, enfocada en mejorar captación de clientes y experiencia de usuario móvil.",
-      "highlights": [
-        "Diseño moderno adaptado a la marca",
-        "Enfoque en SEO local y marketing digital",
-        "Adaptabilidad multiplataforma"
-      ],
-      "url": "https://barberiavic.vercel.app/DonPerfecto-Barber",
+      "url": "https://barberiavic.vercel.app/Example3",
       "github": "https://github.com/V1CMA-V/Barberias"
     },
     {
