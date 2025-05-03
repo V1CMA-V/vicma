@@ -1,0 +1,137 @@
+@import 'tailwindcss';
+@plugin "@midudev/tailwind-animations";
+
+/* Colors */
+@theme {
+  --color-bg1: #0f172a; /* Fondo principal oscuro (tw slate-900) */
+  --color-bg2: #1e293b; /* Fondo de secciones (tw slate-800) */
+  --color-text1: #f8fafc; /* Texto principal blanco suave (tw slate-50) */
+  --color-text2: #cbd5e1; /* Texto secundario gris claro (tw slate-300) */
+  --color-accent: #3a86ff; /* Acento azul eléctrico */
+  --color-accent-hover: #265ecf; /* Azul más profundo para hover */
+  --color-border: #334155; /* Bordes gris oscuro (tw slate-700) */
+  --color-white: #ffffff; /* Blanco puro para tarjetas y contenedores */
+}
+
+/* HTML */
+html,
+body {
+  font-family: 'Overpass Variable', sans-serif;
+  margin: 0;
+  width: 100%;
+  min-height: 100dvh;
+  @apply text-text1;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Textos */
+p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+  font-weight: 300;
+  font-size: 1rem;
+  @apply text-text2;
+  letter-spacing: 0.4px;
+}
+
+p strong,
+strong {
+  @apply text-accent;
+  text-shadow: 1px 1px 20px var(--color-accent);
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 0.6em;
+  @apply text-text1;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  @apply text-accent-hover;
+}
+
+/* Text bling */
+.bling {
+  text-shadow: 1px 1px 20px#FFF;
+}
+
+/* Bordes y contenedores */
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2em 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Scrollbar custom */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(58, 134, 255, 0.3); /* azul suave translúcido */
+  border-radius: 5px;
+  backdrop-filter: blur(4px);
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(58, 134, 255, 0.6); /* más visible al pasar el mouse */
+}
+
+/* Animate */
+/* Cards  */
+
+@keyframes expands-cards {
+  from {
+    opacity: 0;
+    scale: 0;
+    translate: 0 200px;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    translate: 0 0;
+  }
+}
+
+/* Animate come cards */
+@keyframes come-cards {
+  from {
+    opacity: 0;
+    translate: 0 200px;
+    scale: 0.9;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
