@@ -1,0 +1,53 @@
+---
+import CardAbout from '@/components/freelance/CardAbout.astro'
+import TextSections from '@/components/freelance/TextSections.astro'
+
+const cards = [
+  {
+    title: 'Negocio a tu alcance',
+    logo: 'store',
+    description:
+      'Impulsa tu presencia digital con soluciones web modernas y personalizadas para alcanzar a más clientes en línea.',
+  },
+  {
+    title: 'Desarrollo eficiente',
+    logo: 'report-money',
+    description:
+      'Código limpio, escalable y optimizado para ofrecer sitios rápidos, seguros y adaptables a las necesidades de tu negocio.',
+  },
+  {
+    title: 'Diseño enfocado en resultados',
+    logo: 'checkup-list',
+    description:
+      'Experiencias visuales atractivas, usables y responsivas que generan confianza y aumentan la conversión de tus visitantes.',
+  },
+]
+---
+
+<section
+  id='about'
+  class='w-full bg-white/15 backdrop-blur-xl py-16 px-4 md:px-8 flex flex-col items-center text-center'
+>
+  <!-- Título y descripción -->
+  <div class='max-w-3xl space-y-4 mb-10 flex flex-col items-center gap-3.5'>
+    <TextSections section='Sobre mí'>
+      <span slot='title'>¿Por qué contratar a un desarrollador web freelance?</span>
+
+      <span slot='description'
+        >Desarrollador web freelance con experiencia en construir soluciones digitales modernas,
+        rápidas y centradas en resultados.</span
+      >
+    </TextSections>
+  </div>
+
+  <!-- Cards -->
+  <div class='w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6'>
+    {
+      cards.map(({ title, logo, description }) => (
+        <CardAbout title={title} logo={logo}>
+          {description}
+        </CardAbout>
+      ))
+    }
+  </div>
+</section>

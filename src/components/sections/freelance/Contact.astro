@@ -1,0 +1,116 @@
+---
+import ContactCard from '@/components/freelance/ContactCard.astro'
+import TextSections from '@/components/freelance/TextSections.astro'
+---
+
+<section
+  id='contact'
+  class='w-full max-w-6xl mx-auto py-24 px-4 md:px-8 flex flex-col items-center text-center'
+>
+  <TextSections section='Contacto'>
+    <span slot='title'>Contáctame</span>
+    <span slot='description'>
+      Puedes contactarme también por correo o WhatsApp. Estoy disponible para responder cualquier
+      duda sobre tu proyecto.
+    </span>
+  </TextSections>
+
+  <div class='grid grid-cols-1 md:grid-cols-2 gap-6'>
+    <ContactCard id='left' title='¿Prefieres escribirme directamente?'>
+      <p class='text-pretty'>
+        Puedes contactarme también por correo o WhatsApp. Estoy disponible para responder cualquier
+        duda sobre tu proyecto.
+      </p>
+      <ul class='text-sm text-white/90 space-y-2 text-pretty'>
+        <li><strong>Email:</strong> vicma.dev@hotmail.com</li>
+        <li>
+          <strong>WhatsApp:</strong>
+          <a href='https://wa.me/525560908911' target='_blank' rel='noopener noreferrer'>
+            +52 5560908911
+          </a>
+        </li>
+        <li><strong>Ubicación:</strong> Puebla, México</li>
+      </ul>
+    </ContactCard>
+
+    <ContactCard id='right' title='Disponibilidad y atención'>
+      <p class='text-white/80 mb-2 text-pretty'>
+        Respondo mensajes en el mismo día. Para reuniones o seguimiento, estos son mis horarios:
+      </p>
+      <ul class='text-sm text-white/90 space-y-1 text-pretty'>
+        <li><strong>Lunes a Viernes:</strong> 9:00 AM – 6:00 PM</li>
+        <li><strong>Sábados:</strong> 10:00 AM – 2:00 PM</li>
+        <li><strong>Zona horaria:</strong> GMT-6 (CDMX)</li>
+      </ul>
+    </ContactCard>
+
+    <ContactCard id='center' title='¿Tienes un proyecto en mente?' highlight>
+      <p>Completa el formulario y te responderé en menos de 24 horas.</p>
+      <form
+        name='contact'
+        method='POST'
+        data-netlify='true'
+        class='flex flex-col gap-4 text-sm text-white'
+      >
+        <input type='hidden' name='form-name' value='contact' />
+
+        <div class='relative z-0 w-full group'>
+          <input
+            type='text'
+            name='name'
+            id='floating_name'
+            required
+            class='block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white/20 appearance-none text-white focus:outline-none focus:ring-0 focus:border-accent peer'
+            placeholder=' '
+          />
+          <label
+            for='floating_name'
+            class='peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+          >
+            Tu nombre
+          </label>
+        </div>
+
+        <div class='relative z-0 w-full group'>
+          <input
+            type='email'
+            name='email'
+            id='floating_email'
+            required
+            class='block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white/20 appearance-none text-white focus:outline-none focus:ring-0 focus:border-accent peer'
+            placeholder=' '
+          />
+          <label
+            for='floating_email'
+            class='peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+          >
+            Tu correo
+          </label>
+        </div>
+
+        <div class='relative z-0 w-full group'>
+          <textarea
+            name='message'
+            id='floating_message'
+            rows='4'
+            required
+            class='block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white/20 appearance-none text-white focus:outline-none focus:ring-0 focus:border-accent peer resize-none'
+            placeholder=' '></textarea>
+          <label
+            for='floating_message'
+            class='peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+          >
+            Cuéntame sobre tu proyecto
+          </label>
+        </div>
+
+        <button
+          type='submit'
+          class='mt-2 w-full py-2 px-4 bg-accent text-white font-semibold rounded-full hover:bg-accent-hover transition-colors'
+        >
+          Enviar mensaje
+        </button>
+      </form>
+    </ContactCard>
+  </div>
+</section>

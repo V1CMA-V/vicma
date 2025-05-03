@@ -1,0 +1,56 @@
+---
+import TextSections from '@/components/freelance/TextSections.astro'
+
+// Puedes recibir las preguntas desde un array si deseas modularizar
+const faqs = [
+  {
+    question: '¿Cuánto tiempo tarda en entregarse un sitio web?',
+    answer:
+      'El tiempo de entrega varía según el tipo de proyecto. Una landing page toma entre 5 a 7 días hábiles, mientras que sitios multipágina o e-commerce pueden requerir entre 10 a 20 días, dependiendo de su complejidad.',
+  },
+  {
+    question: '¿Cómo se realiza el pago del servicio?',
+    answer:
+      'Se solicita un 50% al inicio del proyecto para asegurar el compromiso, y el 50% restante al finalizar el desarrollo y previo a la entrega final del sitio.',
+  },
+  {
+    question: '¿Ofreces mantenimiento después de la entrega?',
+    answer:
+      'Sí. Cuento con un servicio de mantenimiento mensual que incluye actualizaciones, corrección de errores, mejoras menores y soporte por correo o WhatsApp. El costo inicia desde $500 MXN al mes.',
+  },
+  {
+    question: '¿Qué pasa si necesito agregar más secciones o funciones después?',
+    answer:
+      'Los sitios están diseñados para ser escalables. Podemos cotizar e implementar nuevas funcionalidades o secciones cuando lo necesites.',
+  },
+]
+---
+
+<section id='faq' class='w-full max-w-4xl mx-auto py-24 px-4 md:px-8'>
+  <TextSections section='Preguntas Frecuentes'>
+    <span slot='title'>Preguntas Frecuentes</span>
+    <span slot='description'>Todas las preguntas que necesites</span>
+  </TextSections>
+
+  <div class='space-y-6'>
+    {
+      faqs.map(({ question, answer }) => (
+        <details class='group bg-white/5 border border-white/10 rounded-xl p-4 transition-all duration-300'>
+          <summary class='cursor-pointer text-left text-lg font-semibold text-white flex justify-between items-center'>
+            {question}
+            <span class='transition-transform duration-300 group-open:rotate-180'>⌄</span>
+          </summary>
+          <p class='mt-3 text-sm text-white/80 leading-relaxed'>{answer}</p>
+        </details>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  details {
+    animation: come-cards linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+  }
+</style>

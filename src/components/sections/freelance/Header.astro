@@ -1,0 +1,61 @@
+---
+import ContactButton from '@/components/freelance/ContactButton.astro'
+import Logo from '@/components/Logo.astro'
+---
+
+<header class='sticky top-0 w-full z-50 bg-transparent px-6 py-4'>
+  <section
+    class='header-wrapper mx-auto flex items-center justify-between py-4 px-6 rounded-3xl transition-all duration-500'
+  >
+    <div class='header-content flex items-center gap-2 transition-all duration-500'>
+      <Logo class='w-14 transition-all duration-500' />
+      <span class='name text-lg md:text-2xl font-bold transition-all duration-500'
+        >Víctor Martínez</span
+      >
+    </div>
+    <ContactButton link='#contact'>Contacto</ContactButton>
+  </section>
+</header>
+
+<style>
+  .header-wrapper {
+    max-width: 80%;
+    animation: shrink-header linear both;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+  }
+
+  @keyframes shrink-header {
+    to {
+      max-width: 420px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+    }
+  }
+
+  .header-content {
+    animation: adjust-colors linear both;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+  }
+
+  @keyframes adjust-colors {
+    to {
+      color: var(--color-bg1); /* mejor contraste con fondo claro */
+      transform: rotateX(360deg);
+    }
+  }
+
+  .name {
+    animation: text-resize linear both;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+  }
+
+  @keyframes text-resize {
+    to {
+      font-size: 1rem;
+      color: #111827; /* más oscuro para fondo claro */
+    }
+  }
+</style>

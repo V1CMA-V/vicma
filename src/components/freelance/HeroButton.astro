@@ -1,0 +1,40 @@
+---
+interface Props {
+  class?: string
+}
+const { class: className = '' } = Astro.props
+---
+
+<a
+  href='#contact'
+  aria-label='Ir a la sección de contacto'
+  class={`relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-semibold rounded-full border-2 bg-accent-hover border-accent text-accent transition-colors duration-300 group ${className}`}
+>
+  <!-- Capa de fondo animada -->
+  <span
+    aria-hidden='true'
+    class='absolute inset-0 flex items-center justify-center w-full h-full bg-accent text-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out'
+  >
+    <svg
+      class='w-5 h-5'
+      fill='none'
+      stroke='currentColor'
+      stroke-width='2'
+      viewBox='0 0 24 24'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path stroke-linecap='round' stroke-linejoin='round' d='M14 5l7 7m0 0l-7 7m7-7H3'></path>
+    </svg>
+  </span>
+
+  <!-- Texto animado -->
+  <span
+    aria-hidden='true'
+    class='absolute flex items-center justify-center w-full h-full text-white transition-transform duration-300 transform group-hover:translate-x-full'
+  >
+    <slot />
+  </span>
+
+  <!-- Texto accesible (visualmente invisible, pero legible por lectores) -->
+  <span class='relative invisible'><slot /></span>
+</a>

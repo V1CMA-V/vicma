@@ -1,0 +1,49 @@
+---
+import ProjectItem from '@/components/freelance/ProjectItem.astro'
+import TextSections from '@/components/freelance/TextSections.astro'
+
+const projects = [
+  {
+    img: 'minisfha.webp',
+    title: 'Minis FHA',
+    tags: ['Multipagina', 'Login', 'Registro', 'Dashboard'],
+    link: 'https://minis-fha.vercel.app',
+    github: 'https://github.com/V1CMA-V/minis-fha',
+  },
+  {
+    img: 'barberia.webp',
+    title: 'Barbería',
+    tags: ['Landing page', 'Analytics', 'SEO'],
+    link: 'https://barberiavic.vercel.app',
+    github: 'https://github.com/V1CMA-V/Barberias',
+  },
+  {
+    img: 'freelance.webp',
+    title: 'Portafolio',
+    tags: ['Portafolio', 'Astro', 'TailwindCSS', 'SEO'],
+    link: 'https://vicma.vercel.app',
+    github: 'https://github.com/V1CMA-V/vicma',
+  },
+  {
+    img: 'cv.webp',
+    title: 'CV',
+    tags: ['CV', 'Minimalista', 'Comandos', 'SEO'],
+    link: 'https://vicma.vercel.app/cv',
+    github: 'https://github.com/V1CMA-V/vicma',
+  },
+]
+---
+
+<section
+  id='projects'
+  class='w-full max-w-6xl mx-auto py-24 px-4 md:px-8 flex flex-col items-center text-center'
+>
+  <TextSections section='Proyectos'>
+    <span slot='title'>Proyectos</span>
+    <span slot='description'>Algunos de mis proyectos más destacados.</span>
+  </TextSections>
+
+  <div class='grid grid-cols-1 sm:grid-cols-2 gap-6 w-full mt-10'>
+    {projects.map(props => <ProjectItem {...props} />)}
+  </div>
+</section>

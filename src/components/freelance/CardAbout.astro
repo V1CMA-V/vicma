@@ -1,0 +1,50 @@
+---
+import CheckupList from './icons/checkup-list.astro'
+import ReportMoney from './icons/report-money.astro'
+import Store from './icons/store.astro'
+
+const SKILLS_ICONS: Record<string, any> = {
+  checkupList: CheckupList,
+  reportMoney: ReportMoney,
+  store: Store,
+}
+
+interface Props {
+  title: string
+  logo: string
+}
+const { title, logo } = Astro.props
+
+// Normaliza el nombre para usarlo como clave
+const iconKey = logo.replace(/-([a-z])/g, (_, char) => char.toUpperCase()) // ej: "report-money" → "reportMoney"
+const Icon = SKILLS_ICONS[iconKey]
+---
+
+<section
+  id='animate-cards'
+  class='flex flex-col items-center gap-5 p-6 bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 min-h-[340px] text-center transition-all duration-300 hover:scale-105 hover:border-accent group cursor-crosshair'
+>
+  {
+    Icon && (
+      <div class='flex items-center justify-center w-20 h-20 rounded-full bg-white/10 border border-white/10 transition-colors duration-300 group-hover:bg-white/20 group-hover:border-accent'>
+        <Icon class='w-10 h-10 group-hover:text-accent transition-colors duration-300' />
+      </div>
+    )
+  }
+
+  <h2 class='text-2xl text-balance font-semibold bling'>
+    {title}
+  </h2>
+
+  <p class='text-sm text-balance leading-relaxed max-w-xs'>
+    <slot />
+  </p>
+</section>
+
+<style>
+  #animate-cards {
+    animation: expands-cards linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+  }
+</style>

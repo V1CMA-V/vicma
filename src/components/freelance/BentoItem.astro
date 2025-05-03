@@ -1,0 +1,97 @@
+---
+interface Props {
+  class?: string
+  id: string
+  title: string
+  description: string
+  tecnologias?: string[]
+}
+
+const { class: className = '', id, title, description, tecnologias } = Astro.props
+---
+
+<article
+  id={id}
+  class={`relative rounded-xl overflow-hidden border border-white/10 backdrop-blur-md shadow-inner shadow-white/10 group transition-transform duration-300 hover:scale-[1.01] hover:brightness-105 ${className}`}
+>
+  {
+    Astro.slots.image ? (
+      <slot name='image' />
+    ) : (
+      <div class='absolute inset-0 z-0 bg-gradient-to-br from-accent to-accent-hover opacity-80' />
+    )
+  }
+
+  <div
+    class='relative z-10 flex h-full flex-col justify-center items-center gap-4 p-4 md:p-6 text-white bg-gradient-to-t from-black/40 via-black/20 to-transparent'
+  >
+    <h3 class='text-2xl font-bold uppercase'>{title}</h3>
+
+    <slot name='content' />
+
+    {
+      tecnologias && (
+        <ul class='flex flex-wrap gap-2 mt-2 text-sm text-white/80'>
+          {tecnologias.map(tech => (
+            <li class='px-2 py-1 bg-white/10 rounded-md border border-white/10'>{tech}</li>
+          ))}
+        </ul>
+      )
+    }
+  </div>
+</article>
+
+<style>
+  article {
+    animation: come-cards linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+  }
+
+  /* Posicionamiento solo a partir de lg */
+  @media (min-width: 1024px) {
+    .div1 {
+      grid-column: span 3 / span 3;
+      grid-row: span 3 / span 3;
+    }
+
+    .div2 {
+      grid-column: span 3 / span 3;
+      grid-row: span 2 / span 2;
+      grid-column-start: 4;
+    }
+
+    .div3 {
+      grid-column: span 2 / span 2;
+      grid-row: span 3 / span 3;
+      grid-column-start: 7;
+    }
+
+    .div4 {
+      grid-column: span 2 / span 2;
+      grid-row: span 5 / span 5;
+      grid-column-start: 9;
+    }
+
+    .div5 {
+      grid-column: span 3 / span 3;
+      grid-row: span 2 / span 2;
+      grid-column-start: 1;
+      grid-row-start: 4;
+    }
+
+    .div6 {
+      grid-column: span 3 / span 3;
+      grid-row: span 3 / span 3;
+      grid-column-start: 4;
+      grid-row-start: 3;
+    }
+
+    .div7 {
+      grid-column: span 2 / span 2;
+      grid-row: span 2 / span 2;
+      grid-column-start: 7;
+      grid-row-start: 4;
+    }
+  }
+</style>

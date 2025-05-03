@@ -1,0 +1,68 @@
+---
+import GitHub from '@/icons/GitHub.astro'
+
+interface Props {
+  img: string
+  title: string
+  tags: string[]
+  link: string
+  github: string
+}
+
+const { img, title, tags, link, github } = Astro.props
+---
+
+<article
+  class='flex flex-col h-full bg-white/5 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 gap-4'
+>
+  <figure class='overflow-hidden rounded-md aspect-video'>
+    <a
+      href={link}
+      target='_blank'
+      rel='noopener noreferrer'
+      aria-label={`Visitar el proyecto ${title}`}
+    >
+      <img
+        src={`/projects/${img}`}
+        alt={`Captura del proyecto ${title}`}
+        width='640'
+        height='360'
+        class='w-full h-full object-cover transition-transform duration-300 hover:scale-105'
+        loading='lazy'
+      />
+    </a>
+  </figure>
+
+  <figcaption class='flex flex-col items-start gap-3 text-left'>
+    <div class='flex justify-between w-full items-center'>
+      <h3 class='text-xl bling font-semibold text-accent'>{title}</h3>
+      <a
+        href={github}
+        target='_blank'
+        rel='noopener noreferrer'
+        aria-label={`Ver código fuente de ${title} en GitHub`}
+        class='text-white/70 hover:text-accent text-md underline'
+      >
+        <GitHub />
+      </a>
+    </div>
+
+    <ul class='flex flex-wrap gap-2'>
+      {
+        tags.map(tag => (
+          <li class='text-sm px-2 py-1 bg-white/10 border border-white/10 rounded-full text-white/90'>
+            {tag}
+          </li>
+        ))
+      }
+    </ul>
+  </figcaption>
+</article>
+
+<style>
+  article {
+    animation: expands-cards linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+  }
+</style>

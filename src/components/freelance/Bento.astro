@@ -1,0 +1,98 @@
+---
+import BentoItem from './BentoItem.astro'
+
+const servicos = [
+  {
+    id: 'web',
+    title: 'Desarrollo web moderno',
+    description:
+      'Diseño y desarrollo de sitios web responsivos, rápidos y con enfoque en experiencia de usuario, SEO técnico y rendimiento.',
+    img: '/preview.webp',
+    tecnologias: ['Astro', 'TailwindCSS', 'React', 'JavaScript', 'SEO'],
+    position: 'div1',
+  },
+  {
+    id: 'app',
+    title: 'Aplicaciones web funcionales',
+    description:
+      'Construcción de interfaces web dinámicas con paneles administrativos, formularios inteligentes y conexión a backend.',
+    img: '/aplicationWEB.webp',
+    tecnologias: ['React', 'Node.js', 'TypeScript', 'Supabase'],
+    position: 'div2',
+  },
+  {
+    id: 'landing',
+    title: 'Landing pages optimizadas',
+    description:
+      'Páginas enfocadas en conversión, ideales para negocios locales. Cuentan con diseño responsivo, animaciones, y llamados a la acción.',
+    img: '/landing.webp',
+    position: 'div3',
+  },
+  {
+    id: 'mantenimiento',
+    title: 'Mantenimiento y mejoras web',
+    description:
+      'Diagnóstico y ajustes para mejorar el rendimiento, accesibilidad o seguridad de sitios existentes.',
+    img: '/mantenimiento.webp',
+    position: 'div4',
+  },
+  {
+    id: 'automatizacion',
+    title: 'Automatización de tareas',
+    description:
+      'Integraciones sencillas con APIs o herramientas para ahorrar tiempo y mejorar flujos de trabajo digitales.',
+    img: '/automatizacion.webp',
+    tecnologias: ['Zapier', 'Node.js', 'REST APIs'],
+    position: 'div6',
+  },
+  {
+    id: 'seo',
+    title: 'Optimización SEO',
+    description:
+      'Mejoras técnicas de indexación, estructura semántica, velocidad de carga y estrategia de palabras clave.',
+    img: '/SEO.webp',
+    tecnologias: ['SEO técnico', 'Google Search Console', 'Lighthouse'],
+    position: 'div5',
+  },
+  {
+    id: 'auditoria',
+    title: 'Auditoría técnica web',
+    description:
+      'Análisis profundo del estado actual de tu sitio web, detectando errores, lentitud y oportunidades de mejora.',
+    img: '/auditoria.webp',
+    position: 'div7',
+  },
+]
+---
+
+<main
+  class='w-full grid grid-cols-1 lg:grid-cols-10 lg:grid-rows-5 gap-4 mx-auto px-6 md:px-12 lg:p-x20'
+>
+  {
+    servicos.map(({ id, title, description, tecnologias, img, position }) => (
+      <BentoItem
+        id={id}
+        class={position}
+        title={title}
+        description={description}
+        tecnologias={tecnologias}
+      >
+        {img && (
+          <div slot='image' class='absolute inset-0 z-0'>
+            <img
+              src={img}
+              width={600}
+              height={700}
+              alt={title}
+              loading='lazy'
+              class='w-full h-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-105'
+            />
+            <div class='absolute inset-0 backdrop-blur-xs bg-black/50' />
+          </div>
+        )}
+
+        <p slot='content'>{description}</p>
+      </BentoItem>
+    ))
+  }
+</main>
