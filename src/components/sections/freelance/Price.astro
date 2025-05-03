@@ -1,0 +1,60 @@
+---
+import PriceItem from '@/components/freelance/PriceItem.astro'
+import TextSections from '@/components/freelance/TextSections.astro'
+
+const prices = [
+  {
+    title: 'Landing page',
+    price: '$5,000',
+    description:
+      'Ideal para negocios que buscan captar clientes con una sola página de alto impacto.',
+    features: [
+      'Diseño 100% personalizado',
+      'Adaptado a dispositivos móviles',
+      'Formulario de contacto funcional',
+      'Integración con redes sociales',
+      'Optimización básica SEO',
+    ],
+  },
+  {
+    title: 'Sitio Multipágina',
+    price: '$8,000',
+    description:
+      'Perfecto para proyectos con varias secciones como servicios, nosotros y contacto.',
+    features: [
+      'Hasta 5 secciones internas',
+      'Menú de navegación responsivo',
+      'Diseño visual coherente en todo el sitio',
+      'Formulario de contacto avanzado',
+      'Optimización de carga y estructura',
+    ],
+    highlighted: true, // para destacarlo visualmente
+  },
+  {
+    title: 'Sitio E-commerce',
+    price: '$13,000',
+    description:
+      'Para negocios que desean vender en línea con catálogo de productos y pasarela de pago.',
+    features: [
+      'Gestión de productos y categorías',
+      'Carrito de compras funcional',
+      'Pasarela de pagos (Stripe/Paypal)',
+      'Panel administrativo básico',
+      'Optimización para buscadores',
+    ],
+  },
+]
+---
+
+<section id='prices' class='w-full bg-bg2/15 backdrop-blur-xl py-16 px-4 md:px-8'>
+  <div class='max-w-6xl mx-auto py-24 px-4 md:px-8 flex flex-col items-center text-center'>
+    <TextSections section='Precios'>
+      <span slot='title'>Paquetes disponibles</span>
+      <span slot='description'>Elige el plan que mejor se adapte a tu proyecto</span>
+    </TextSections>
+
+    <div class='mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+      {prices.map(price => <PriceItem {...price} />)}
+    </div>
+  </div>
+</section>

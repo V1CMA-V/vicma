@@ -1,0 +1,55 @@
+---
+import HeroButton from './HeroButton.astro'
+
+interface Props {
+  title: string
+  price: string
+  description?: string
+  features: string[]
+  highlighted?: boolean
+}
+
+const { title, price, description, features, highlighted = false } = Astro.props
+---
+
+<article
+  class={`flex flex-col justify-between h-full bg-white/5 backdrop-blur-md border rounded-2xl p-6 shadow-md transition-transform duration-300
+    ${highlighted ? 'border-accent shadow-lg scale-105 hover:scale-110' : 'border-white/10 hover:scale-105'}`}
+>
+  <header class='mb-6 text-center space-y-2'>
+    <h3 class='text-2xl font-bold text-accent'>{title}</h3>
+    <p class='text-white text-3xl font-semibold'>
+      Desde <strong class='text-xl'>{price}</strong> MXN
+    </p>
+    {description && <p class='text-sm text-white/70'>{description}</p>}
+  </header>
+
+  <ul class='flex flex-col gap-3 text-left text-sm text-white/90 mb-6'>
+    {
+      features.map(feature => (
+        <li class='flex items-center gap-2'>
+          <svg
+            class='w-4 h-4 text-accent flex-shrink-0'
+            fill='none'
+            stroke='currentColor'
+            stroke-width='2'
+            viewBox='0 0 24 24'
+          >
+            <path stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7' />
+          </svg>
+          {feature}
+        </li>
+      ))
+    }
+  </ul>
+
+  <HeroButton>Contratar</HeroButton>
+</article>
+
+<style>
+  article {
+    animation: expands-cards linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+  }
+</style>
