@@ -53,6 +53,9 @@ import TextSections from '@/components/freelance/TextSections.astro'
         data-netlify='true'
         class='flex flex-col gap-4 text-sm text-white'
       >
+        <!-- Asunto personalizado -->
+        <input type='hidden' name='_subject' value='Nuevo Proyecto de {{name}} Freelance - VICMA' />
+
         <!-- Honeypot -->
         <input
           type='text'
