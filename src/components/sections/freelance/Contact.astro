@@ -46,80 +46,10 @@ import TextSections from '@/components/freelance/TextSections.astro'
 
     <ContactCard id='center' title='¿Tienes un proyecto en mente?' highlight>
       <p>Completa el formulario y te responderé en menos de 24 horas.</p>
-      <form
-        action='https://formspree.io/f/mnndzajl'
-        method='POST'
-        class='flex flex-col gap-4 text-sm text-white'
-      >
-        <!-- Asunto personalizado -->
-        <input type='hidden' name='_subject' value='Nuevo Proyecto de {{name}} Freelance - VICMA' />
-
-        <!-- Honeypot -->
-        <input
-          type='text'
-          name='_gotcha'
-          style='display: none;'
-          tabindex='-1'
-          aria-hidden='true'
-          autocomplete='off'
-        />
-
-        <div class='relative z-0 w-full group'>
-          <input
-            type='text'
-            name='name'
-            id='floating_name'
-            required
-            class='block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white/20 appearance-none text-white focus:outline-none focus:ring-0 focus:border-accent peer'
-            placeholder=' '
-          />
-          <label
-            for='floating_name'
-            class='peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
-          >
-            Tu nombre
-          </label>
-        </div>
-
-        <div class='relative z-0 w-full group'>
-          <input
-            type='email'
-            name='email'
-            id='floating_email'
-            required
-            class='block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white/20 appearance-none text-white focus:outline-none focus:ring-0 focus:border-accent peer'
-            placeholder=' '
-          />
-          <label
-            for='floating_email'
-            class='peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
-          >
-            Tu correo
-          </label>
-        </div>
-
-        <div class='relative z-0 w-full group'>
-          <textarea
-            name='message'
-            id='floating_message'
-            rows='4'
-            required
-            class='block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white/20 appearance-none text-white focus:outline-none focus:ring-0 focus:border-accent peer resize-none'
-            placeholder=' '></textarea>
-          <label
-            for='floating_message'
-            class='peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
-          >
-            Cuéntame sobre tu proyecto
-          </label>
-        </div>
-
-        <button
-          type='submit'
-          class='mt-2 w-full py-2 px-4 bg-accent text-white font-semibold rounded-full hover:bg-accent-hover transition-colors cursor-pointer'
-        >
-          Enviar mensaje
-        </button>
+      <form action='https://formspree.io/f/mnndzajl' method='post'>
+        <label for='email'>Tu correo</label>
+        <input name='email' id='email' type='email' />
+        <button type='submit'>Enviar</button>
       </form>
     </ContactCard>
 
