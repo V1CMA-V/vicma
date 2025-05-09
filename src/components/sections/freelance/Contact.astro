@@ -51,10 +51,7 @@ import TextSections from '@/components/freelance/TextSections.astro'
         method='POST'
         class='flex flex-col gap-4 text-sm text-white'
       >
-        <!-- Asunto personalizado -->
-        <input type='hidden' name='_subject' value='Nuevo Proyecto de {{name}} Freelance - VICMA' />
-
-        <!-- Honeypot -->
+        <input type='hidden' name='_subject' value='Nuevo Proyecto desde Freelance - VICMA' />
         <input
           type='text'
           name='_gotcha'
@@ -63,7 +60,6 @@ import TextSections from '@/components/freelance/TextSections.astro'
           aria-hidden='true'
           autocomplete='off'
         />
-
         <input type='hidden' name='_replyto' id='replyToField' />
         <input type='hidden' name='submitted_at' id='submittedAt' />
 
@@ -73,15 +69,14 @@ import TextSections from '@/components/freelance/TextSections.astro'
             name='name'
             id='floating_name'
             required
-            class='block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white/20 appearance-none text-white focus:outline-none focus:ring-0 focus:border-accent peer'
+            class='block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white/20 text-white focus:outline-none focus:ring-0 focus:border-accent peer'
             placeholder=' '
           />
           <label
             for='floating_name'
-            class='peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+            class='peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-6 peer-focus:scale-75'
+            >Tu nombre</label
           >
-            Tu nombre
-          </label>
         </div>
 
         <div class='relative z-0 w-full group'>
@@ -90,15 +85,45 @@ import TextSections from '@/components/freelance/TextSections.astro'
             name='email'
             id='floating_email'
             required
-            class='block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white/20 appearance-none text-white focus:outline-none focus:ring-0 focus:border-accent peer'
+            class='block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white/20 text-white focus:outline-none focus:ring-0 focus:border-accent peer'
             placeholder=' '
           />
           <label
             for='floating_email'
-            class='peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+            class='peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-6 peer-focus:scale-75'
+            >Tu correo</label
           >
-            Tu correo
-          </label>
+        </div>
+
+        <div class='relative z-0 w-full group'>
+          <select
+            name='project_type'
+            id='floating_project_type'
+            required
+            class='block appearance-none py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white/20 text-white focus:outline-none focus:ring-0 focus:border-accent peer font-medium'
+          >
+            <option value='' disabled selected hidden>Tipo de Proyecto</option>
+            <option value='Landing Page'>Landing Page</option>
+            <option value='Tienda Online'>Tienda Online</option>
+            <option value='Blog Personal'>Blog Personal</option>
+            <option value='Portafolio'>Portafolio</option>
+            <option value='Otra'>Otra</option>
+          </select>
+        </div>
+
+        <div id='custom-project-type' class='relative z-0 w-full group hidden'>
+          <input
+            type='text'
+            name='custom_project_type'
+            id='floating_custom_project_type'
+            class='block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white/20 text-white focus:outline-none focus:ring-0 focus:border-accent peer'
+            placeholder=' '
+          />
+          <label
+            for='floating_custom_project_type'
+            class='peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-6 peer-focus:scale-75'
+            >Especifica el tipo de proyecto</label
+          >
         </div>
 
         <div class='relative z-0 w-full group'>
@@ -107,22 +132,20 @@ import TextSections from '@/components/freelance/TextSections.astro'
             id='floating_message'
             rows='4'
             required
-            class='block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white/20 appearance-none text-white focus:outline-none focus:ring-0 focus:border-accent peer resize-none'
+            class='block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white/20 text-white focus:outline-none focus:ring-0 focus:border-accent peer resize-none'
             placeholder=' '></textarea>
           <label
             for='floating_message'
-            class='peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+            class='peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-6 peer-focus:scale-75'
+            >Cuéntame sobre tu proyecto</label
           >
-            Cuéntame sobre tu proyecto
-          </label>
         </div>
 
         <button
           type='submit'
           class='mt-2 w-full py-2 px-4 bg-accent text-white font-semibold rounded-full hover:bg-accent-hover transition-colors cursor-pointer'
+          >Enviar mensaje</button
         >
-          Enviar mensaje
-        </button>
       </form>
     </ContactCard>
 
@@ -134,17 +157,45 @@ import TextSections from '@/components/freelance/TextSections.astro'
         <h2 class='text-xl font-bold mb-2'>
           <span class='text-black'>¡Gracias por tu mensaje!</span>
         </h2>
-        <p class=''><span class='text-gray-700'>Te responderé muy pronto.</span></p>
+        <p>
+          <span class='text-gray-700'>Te responderé muy pronto.</span>
+        </p>
         <button
           onclick="document.getElementById('success-modal').classList.add('hidden')"
           class='mt-4 bg-accent text-white px-4 py-2 rounded-full hover:bg-accent-hover transition cursor-pointer'
+          >Cerrar</button
         >
-          Cerrar
-        </button>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  select {
+    appearance: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    border: none;
+  }
+  select:focus {
+    outline: none;
+  }
+  select option {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 12px;
+  }
+  select option:hover {
+    background-color: var(--color-accent-hover);
+  }
+  select option:checked {
+    background-color: var(--color-accent);
+  }
+  select::-ms-expand {
+    display: none;
+  }
+</style>
 
 <script is:inline>
   document.addEventListener('DOMContentLoaded', () => {
@@ -152,36 +203,42 @@ import TextSections from '@/components/freelance/TextSections.astro'
     const replyToField = document.getElementById('replyToField')
     const emailInput = document.getElementById('floating_email')
     const submittedAt = document.getElementById('submittedAt')
+    const projectType = document.getElementById('floating_project_type')
+    const customField = document.getElementById('custom-project-type')
+    const modal = document.getElementById('success-modal')
 
-    form.addEventListener('submit', () => {
+    projectType.addEventListener('change', () => {
+      if (projectType.value === 'Otra') {
+        customField.classList.remove('hidden')
+        customField.querySelector('input').setAttribute('required', 'required')
+      } else {
+        customField.classList.add('hidden')
+        customField.querySelector('input').removeAttribute('required')
+      }
+    })
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault()
+
       replyToField.value = emailInput.value
-
-      const now = new Date()
-      submittedAt.value = now.toLocaleString('es-MX', {
+      submittedAt.value = new Date().toLocaleString('es-MX', {
         timeZone: 'America/Mexico_City',
         dateStyle: 'short',
         timeStyle: 'short',
       })
-    })
 
-    const modal = document.getElementById('success-modal')
-
-    form.addEventListener('submit', async e => {
-      e.preventDefault()
       const formData = new FormData(form)
 
       try {
         const res = await fetch(form.action, {
           method: 'POST',
           body: formData,
-          headers: {
-            Accept: 'application/json',
-          },
+          headers: { Accept: 'application/json' },
         })
 
         if (res.ok) {
-          form.reset() // Limpia campos
-          modal.classList.remove('hidden') // Muestra modal
+          form.reset()
+          modal.classList.remove('hidden')
         } else {
           alert('Hubo un error al enviar el mensaje.')
         }
