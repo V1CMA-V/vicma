@@ -33,27 +33,7 @@ const { image, summary, url } = basics
     <meta name='twitter:description' content={summary} />
     <meta name='twitter:image' content='' />
   </head>
-  <body
-    class='bg-gradient-to-br from-slate-800 via-gray-900 to-black bg-[length:400%_400%] bg-fixed bg-no-repeat'
-  >
+  <body>
     <slot />
   </body>
 </html>
-
-<style>
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  body {
-    animation: gradient 15s ease infinite;
-  }
-</style>
