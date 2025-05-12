@@ -80,12 +80,7 @@
     {
       "name": "CSS",
       "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "Diseño Responsive",
-        "Animaciones"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive", "Animaciones"]
     },
     {
       "name": "JavaScript",
@@ -95,22 +90,12 @@
     {
       "name": "Tailwind",
       "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "CSS Framework",
-        "Diseño Responsive"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"]
     },
     {
       "name": "TypeScript",
       "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "Backend",
-        "JavaScript Superset"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"]
     },
     {
       "name": "Node",
@@ -120,12 +105,7 @@
     {
       "name": "MySQL",
       "level": "Avanzado",
-      "keywords": [
-        "Bases de Datos",
-        "SQL",
-        "Almacenamiento de Datos",
-        "Backend"
-      ]
+      "keywords": ["Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"]
     },
     {
       "name": "Git",
@@ -135,26 +115,20 @@
     {
       "name": "GitHub",
       "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones",
-        "Colaboración",
-        "Código Fuente",
-        "Git"
-      ]
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente", "Git"]
     },
     {
       "name": "Next.js",
       "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"]
     },
     {
       "name": "React",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
+      "name": "Astro",
       "level": "Avanzado",
       "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
     }
@@ -171,39 +145,52 @@
   ],
   "projects": [
     {
-      "name": "Minis FHA Website",
-      "isActive": false,
-      "description": "Aplicación web para la administración de una empresa de adiestramiento canino.",
+      "name": "Portafolio Web",
+      "isActive": true,
+      "description": "Mi portafolio web personal desarrollado con Astro y TailwindCSS",
       "highlights": [
-        "Base de datos",
-        "Integración de Stripe",
-        "Integración de inicio de sesión con Google"
+        "Diseño moderno y responsivo",
+        "Optimización SEO",
+        "Integración con GitHub API"
       ],
-      "url": "https://minis-fha.vercel.app",
-      "github": "https://github.com/V1CMA-V/minis-fha"
+      "url": "https://vicma.dev",
+      "github": "https://github.com/V1CMA-V/vicma"
     },
     {
-      "name": "Barbería EL Templo Website",
+      "name": "Barbería Website",
       "isActive": true,
-      "description": "Landing page moderna y responsiva con diferentes variantes para barberías en crecimiento.",
+      "description": "Landing page moderna y responsiva con diferentes variantes para barberías en crecimiento",
       "highlights": [
         "Optimización de carga en Lighthouse",
         "Enlace directo a WhatsApp Business",
         "Integración de mapa de ubicación"
       ],
-      "url": "https://barberiavic.vercel.app/Example3",
+      "url": "https://barberiavic.vercel.app",
       "github": "https://github.com/V1CMA-V/Barberias"
     },
     {
-      "name": "Diabetes Prediction App (ML Project)",
+      "name": "Machine Learning Projects",
       "isActive": true,
-      "description": "Desarrollo de aplicación en Streamlit para predicción de diabetes basada en Machine Learning.",
+      "description": "Colección de ejercicios y prácticas de Machine Learning, incluyendo predicción de diabetes",
       "highlights": [
         "Implementación de modelos Random Forest y XGBoost",
         "Optimización de hiperparámetros",
-        "Despliegue de app funcional"
+        "Análisis de datos y visualización"
       ],
-      "url": "EN PROCESO"
+      "url": "https://github.com/V1CMA-V/machine-Learning",
+      "github": "https://github.com/V1CMA-V/machine-Learning"
+    },
+    {
+      "name": "Predicción de Pokemon",
+      "isActive": true,
+      "description": "Aplicación web para la predicción de Pokemon utilizando un modelo de Machine Learning",
+      "highlights": [
+        "Implementación de modelos Random Forest y XGBoost",
+        "Optimización de hiperparámetros",
+        "Análisis de datos y visualización"
+      ],
+      "url": "https://pokemon-data-analysis-vic.streamlit.app/",
+      "github": "https://github.com/V1CMA-V/pokemon-data-analysis"
     }
   ]
 }
