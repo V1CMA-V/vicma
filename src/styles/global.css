@@ -20,7 +20,7 @@ body {
   margin: 0;
   width: 100%;
   min-height: 100dvh;
-  @apply text-text1;
+  @apply text-text1 bg-gradient-to-br from-slate-800 via-gray-900 to-black bg-[length:400%_400%] bg-fixed bg-no-repeat;
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
