@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Víctor Manuel Martínez Cruz",
-    "label": "Desarrollador Web Especializado en Frontend y Optimización de Proyectos Digitales",
+    "label": "Desarrollador Frontend | Landing Pages que convierten | SEO + Performance + UI moderna",
     "image": "/me.webp",
     "email": "vicma.dev@hotmail.com",
     "phone": "5560908911",
     "url": "https://vicma.vercel.app",
-    "summary": "Apasionado del desarrollo web, con experiencia en creación de interfaces modernas, optimizadas y responsivas. Actualmente impulsando proyectos propios de optimización web y campañas digitales. Combino habilidades técnicas con visión estratégica para ayudar a negocios locales a crecer en línea. Enfocado en tecnologías como React, Astro, TailwindCSS y SEO técnico.",
+    "summary": "Soy desarrollador web especializado en frontend, con experiencia en crear landing pages personalizadas, interfaces responsivas y sitios optimizados con Astro, Tailwind CSS y React. Me apasiona construir soluciones visuales limpias, escalables y funcionales que generen impacto real en los negocios. He trabajado con clientes del sector inmobiliario, educativo y comercial, entregando sitios listos para producción, optimizados para SEO y enfocados en conversión. Busco seguir creciendo como freelance y aportar valor a través de diseño web moderno, animaciones efectivas y desarrollo centrado en la experiencia del usuario. Estoy disponible para colaborar en nuevos proyectos digitales que busquen destacar en la web.",
     "location": {
       "address": "Jose Maria Lafragua 6",
       "postalCode": "72080",
@@ -32,25 +32,27 @@
       "name": "Freelance Web Developer",
       "position": "Desarrollador Frontend & Consultor en Optimización Digital",
       "url": "https://vicma.vercel.app",
-      "startDate": "2023-01-01",
+      "startDate": "2024-02-01",
       "endDate": null,
-      "summary": "Desarrollo de sitios web personalizados para negocios locales, enfocados en velocidad, responsividad y posicionamiento SEO. Especializado en creación de landing pages optimizadas y gestión de proyectos de marketing digital.",
+      "summary": "Diseño y desarrollo de sitios web personalizados para negocios locales, enfocados en velocidad, experiencia de usuario y visibilidad online. Especializado en la creación de landing pages modernas, responsivas y optimizadas para SEO, así como en la implementación de estrategias de captación digital.",
       "highlights": [
-        "Optimización de tiempos de carga en proyectos en más del 40%",
-        "Desarrollo de sitios con Astro, React y TailwindCSS",
-        "Implementación de campañas de captación de clientes a través de Meta Ads"
+        "🚀 Reduje los tiempos de carga en más del 40% utilizando Astro y optimización de recursos, mejorando la retención de usuarios y el rendimiento en dispositivos móviles.",
+        "🛠️ Desarrollé +10 sitios web con tecnologías como Astro, React y TailwindCSS, adaptados a distintos sectores (inmobiliario, barberías, educación).",
+        "📈 Implementé campañas de captación de leads con Meta Ads y landing pages orientadas a conversión, generando los primeros prospectos digitales para varios negocios.",
+        "🔍 Incorporé técnicas básicas de SEO, logrando mejoras en posicionamiento orgánico local y visibilidad en Google."
       ]
     },
     {
       "name": "Adiestramiento Canino Minis FHA",
       "position": "Desarrollador Web Freelance",
       "startDate": "2024-03-01",
-      "endDate": "2024-04-01",
-      "summary": "Diseño de una nueva versión de sitio web con enfoque en experiencia de usuario, optimización para motores de búsqueda y presentación de servicios personalizados.",
+      "endDate": "2024-05-01",
+      "summary": "Rediseño completo del sitio web institucional para mejorar la presentación de servicios, facilitar el contacto con clientes y potenciar la presencia digital de la marca.",
       "highlights": [
-        "Integración de WhatsApp Business",
-        "Base de datos de clientes",
-        "Desarrollo de landing page personalizada"
+        "🎯 Diseño e implementación de landing page 100% personalizada con enfoque en claridad visual y estructura escalable.",
+        "📞 Integración de canal de contacto directo con WhatsApp Business, mejorando el tiempo de respuesta del cliente.",
+        "🗃️ Desarrollo de una base de datos simple para gestión de clientes potenciales.",
+        "🔧 Optimización para SEO local y visibilidad en motores de búsqueda mediante prácticas recomendadas y estructura semántica."
       ]
     }
   ],
@@ -74,62 +76,62 @@
   "skills": [
     {
       "name": "HTML",
-      "level": "Avanzado",
+      "level": "Intermedio Alto",
       "keywords": ["Desarrollo Web", "Frontend"]
     },
     {
       "name": "CSS",
-      "level": "Avanzado",
+      "level": "Intermedio Alto",
       "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive", "Animaciones"]
     },
     {
       "name": "JavaScript",
-      "level": "Avanzado",
+      "level": "Intermedio Alto",
       "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
     },
     {
       "name": "Tailwind",
-      "level": "Avanzado",
+      "level": "Intermedio Alto",
       "keywords": ["Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"]
     },
     {
       "name": "TypeScript",
-      "level": "Avanzado",
+      "level": "Intermedio Alto",
       "keywords": ["Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"]
     },
     {
       "name": "Node",
-      "level": "Avanzado",
+      "level": "Intermedio",
       "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
     },
     {
       "name": "MySQL",
-      "level": "Avanzado",
+      "level": "Intermedio",
       "keywords": ["Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"]
     },
     {
       "name": "Git",
-      "level": "Avanzado",
+      "level": "Intermedio Alto",
       "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
     },
     {
       "name": "GitHub",
-      "level": "Avanzado",
+      "level": "Intermedio Alto",
       "keywords": ["Control de Versiones", "Colaboración", "Código Fuente", "Git"]
     },
     {
       "name": "Next.js",
-      "level": "Avanzado",
+      "level": "Intermedio Alto",
       "keywords": ["Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"]
     },
     {
       "name": "React",
-      "level": "Avanzado",
+      "level": "Intermedio Alto",
       "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
     },
     {
       "name": "Astro",
-      "level": "Avanzado",
+      "level": "Intermedio Alto",
       "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
     }
   ],
