@@ -11,6 +11,9 @@ importers:
       '@fontsource-variable/overpass':
         specifier: ^5.2.5
         version: 5.2.5
+      '@fontsource/ibm-plex-mono':
+        specifier: ^5.2.5
+        version: 5.2.5
       '@midudev/tailwind-animations':
         specifier: 0.2.0
         version: 0.2.0(tailwindcss@4.1.5)
@@ -228,6 +231,9 @@ packages:
 
   '@fontsource-variable/overpass@5.2.5':
     resolution: {integrity: sha512-kNYPClOJbXrwCPfsKeQTiAPk2cgHbQrU/6HNh5Kj+YjK0M8c5QYBVk6fWCG9LTt/OWQV2A2GwwYrWxkcdpL3dQ==}
+
+  '@fontsource/ibm-plex-mono@5.2.5':
+    resolution: {integrity: sha512-G09N3GfuT9qj3Ax2FDZvKqZttzM3v+cco2l8uXamhKyXLdmlaUDH5o88/C3vtTHj2oT7yRKsvxz9F+BXbWKMYA==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1798,6 +1804,8 @@ snapshots:
     optional: true
 
   '@fontsource-variable/overpass@5.2.5': {}
+
+  '@fontsource/ibm-plex-mono@5.2.5': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
